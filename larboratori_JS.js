@@ -84,9 +84,24 @@ console.log(calcularPromedio(notas));
         {nombre: "German", edad:27},
     ];
 
-    
+
+    function filtrarUsuarios(usuarios, edadMinima){
+        userlist = [];
+        for (let i = 0; i < usuarios.length; i++){
+            if (usuarios[i].edad > edadMinima){
+                userlist.push(usuarios[i].nombre);                
+        }}
+        return userlist
+    }
+    let edadMin = parseInt(input("Ingrese lo edad minima deseada: \n"))
+
+    console.log(filtrarUsuarios(users, edadMin));
 
 // Ejercicio 6: Contador de Palabras
+
+    function contarPalabras(cadena){
+        
+    }
 
 // Ejercico 7: Simulador de cajero Automatico
 
